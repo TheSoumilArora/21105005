@@ -1,4 +1,0 @@
-x=input("Enter the list : ")
-for i in x:
-    if x.count(i) == 1:
-        print(i)
