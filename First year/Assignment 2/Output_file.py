@@ -31,8 +31,10 @@ e.      Right shift a with 2 bits and b with 4 bits : a = 14, b = 0
 
 The solution of Question 4 is :
 
-Enter the numbers : 8 133 43
-The greatest number among the entered numbers is 133
+Enter first number : 45
+Enter second number : 22
+Enter third number : 124
+The greatest number is 124
 
 
 The solution of Question 5 is :

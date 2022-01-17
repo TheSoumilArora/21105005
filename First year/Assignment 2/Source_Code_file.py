@@ -38,12 +38,19 @@ print("e.\tRight shift a with 2 bits and b with 4 bits : a = %d, b = %d\n" % (a 
 
 #Question 4
 print("\nThe solution of Question 4 is :\n")
-entered_numbers=input("Enter the numbers : ").split()
-i=0
-while i < len(entered_numbers):                                                                         #Converting all numbers into int format
-    entered_numbers[i]=int(entered_numbers[i])
-    i += 1
-print("The greatest number among the entered numbers is %s\n" % max(entered_numbers))
+first_number = int(input("Enter first number : "))
+second_number = int(input("Enter second number : "))
+third_number = int(input("Enter third number : "))
+if first_number >= second_number:
+    if first_number >= third_number:
+        print("The greatest number is %s\n" % first_number)
+    else:
+        print("The greatest number is %s\n" % third_number)
+else:
+    if second_number >= third_number:
+        print("The greatest number is %s\n" % second_number)
+    else:
+        print("The greatest number is %s\n" % third_number)
 
 #Question 5
 print("\nThe solution of Question 5 is :\n")

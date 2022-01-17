@@ -1,6 +1,13 @@
-entered_numbers=input("Enter the numbers : ").split()
-i=0
-while i < len(entered_numbers):                                                                         #Converting all numbers into int format
-    entered_numbers[i]=int(entered_numbers[i])
-    i += 1
-print("The greatest number among the entered numbers is %s\n" % max(entered_numbers))
+first_number = int(input("Enter first number : "))
+second_number = int(input("Enter second number : "))
+third_number = int(input("Enter third number : "))
+if first_number >= second_number:
+    if first_number >= third_number:
+        print("The greatest number is %s\n" % first_number)
+    else:
+        print("The greatest number is %s\n" % third_number)
+else:
+    if second_number >= third_number:
+        print("The greatest number is %s\n" % second_number)
+    else:
+        print("The greatest number is %s\n" % third_number)
