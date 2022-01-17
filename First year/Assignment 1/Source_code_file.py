@@ -1,7 +1,4 @@
 #Question 1
-import numbers
-
-
 print("\nThe solution of Question 1 is :\n")
 #Taking input from the user
 numbers = input("Enter the numbers whose average is to be calculated: ")

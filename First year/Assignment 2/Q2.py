@@ -1,5 +1,5 @@
 #inputs
-name = input("\nEnter your name : ")
+name = input("Enter your name : ")
 sid = int(input("Enter your SID : "))
 dept_name = input("Enter the name of your department : ").upper()
 cgpa=float(input("Enter your CGPA : "))

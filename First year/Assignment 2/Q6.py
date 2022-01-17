@@ -1,6 +1,6 @@
 while True:
-    sides = sorted(input("\nEnter the dimensions to check whether triangle possible or not : ").split())
-    if len(sides) == 3:
+    sides = sorted(input("Enter the dimensions to check whether triangle possible or not : ").split())  #Sorting the inputted values in a list
+    if len(sides) == 3:                                                                                 #Making sure only 3 values are entered
         break
     else:
         print("\nA triangle has only 3 sides!\nPlease enter only 3 values")

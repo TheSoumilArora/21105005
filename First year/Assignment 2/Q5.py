@@ -1,4 +1,4 @@
-if "name" in input("\nEnter the string : "):
+if "name" in input("Enter the string : "):
     print("Yes\n")
 else:
     print("No\n")
