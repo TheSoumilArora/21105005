@@ -5,7 +5,7 @@ The length of the given string is : 35
 The string in reverse would be : egaugnal evitisnes esac a si nohtyP
 The new string becomes : a case sensitive
 The first occurence of the given substring "a" is at index no. = 10
-The inputted strings with no white spaces will be "Pythonisacasesensitivelanguage"
+The given input string with no white spaces will be "Pythonisacasesensitivelanguage"
 
 
 The solution of Question 2 is :

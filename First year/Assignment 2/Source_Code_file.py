@@ -10,11 +10,11 @@ new_str = "object oriented"                                                     
 substr = "a"
 indx = input_str.find(substr)                                                                           #Finding the index value of the given substring
 if indx == -1:
-    print("The given substring was not found in the inputted string")
+    print("The given substring was not found in the given input string")
 else:
     print("The first occurence of the given substring \"%s\" is at index no. = %d" % (substr, indx))    #Printing the index value
 no_white_spaces_str=input_str.replace(" ","")                                                           #Removing white spaces
-print("The inputted strings with no white spaces will be \"%s\"\n" % no_white_spaces_str)
+print("The given input string with no white spaces will be \"%s\"\n" % no_white_spaces_str)
 
 #Question 2
 print("\nThe solution of Question 2 is :\n")
