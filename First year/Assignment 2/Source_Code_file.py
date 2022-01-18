@@ -7,6 +7,7 @@ print("The string in reverse would be : %s" % reversed_str)
 new_str = input_str[10:26]                                                                              #Creating a new string              
 print("The new string becomes : %s" % new_str)
 new_str = "object oriented"                                                                             #Replacing the value
+print("The replaced substring will be : %s" % new_str)
 substr = "a"
 indx = input_str.find(substr)                                                                           #Finding the index value of the given substring
 if indx == -1:
