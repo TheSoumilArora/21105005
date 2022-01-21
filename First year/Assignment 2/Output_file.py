@@ -1,6 +1,5 @@
 The solution of Question 1 is :
 
-Enter the string : Python is a case sensitive language
 (a)     The length of the given string is : 35
 (b)     The string in reverse would be : egaugnal evitisnes esac a si nohtyP
 (c)     The new string becomes : a case sensitive

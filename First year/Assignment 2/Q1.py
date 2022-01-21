@@ -1,4 +1,4 @@
-input_str = input("Enter the string : ")                                                                    #Taking input from user
+input_str = "Python is a case sensitive language"
 print("(a)\tThe length of the given string is : %s" % len(input_str))                                       #Printing the length of the string
 reversed_str = input_str[ : : -1 ]                                                                          #Creating reversed string
 print("(b)\tThe string in reverse would be : %s" % reversed_str)
