@@ -1,12 +1,12 @@
 The solution of Question 1 is :
 
 Enter the string : Python is a case sensitive language
-The length of the given string is : 35
-The string in reverse would be : egaugnal evitisnes esac a si nohtyP
-The new string becomes : a case sensitive
-The replaced substring will be : object oriented
-The first occurence of the given substring "a" is at index no. = 10
-The given input string with no white spaces will be "Pythonisacasesensitivelanguage"
+(a)     The length of the given string is : 35
+(b)     The string in reverse would be : egaugnal evitisnes esac a si nohtyP
+(c)     The new string becomes : a case sensitive
+(d)     The replaced substring will be : Python is object oriented language
+(e)     The first occurence of the given substring "a" is at index no. = 10
+(f)     The inputted strings with no white spaces will be "Pythonisacasesensitivelanguage"
 
 
 The solution of Question 2 is :
