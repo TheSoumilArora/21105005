@@ -1,7 +1,7 @@
 dict1 = {}
 while True:                                                                                                         #Loop for inputting values
-    name = input("Enter the name of the student : ")
-    SID = int(input("Enter the SID of %s : " % name))
+    name = input("Enter the name of the student: ")
+    SID = int(input("Enter the SID of %s: " % name))
     dict1[SID] = name
     print("\nYou have entered %d value(s) till now" % len(dict1))
     more_data = input("Do you want to enter more data? ")
@@ -26,3 +26,12 @@ for sorted_key in sorted(dict1):                                                
 print("\nc. Student Details (sorted with respect to SIDs):")                                                        #Q6(c)
 for i in dict3:
     print("The SID of \033[1m%s\033[0m is \033[1m%d\033[0m" % (dict3[i],i))
+print("\nd. ", end="")                                                                                              #Q6(d)
+while True:
+    search_SID = int(input("Enter the SID of the student: "))
+    if search_SID in dict1:
+        print("The name of student whose SID is %d is \033[1m%s\033[0m" % (search_SID,dict1[search_SID]))
+        break
+    else:
+        print("The SID you entered isn't entered\nPlease enter a valid SID to be searched\nList of valid SIDs: %s\n" % list((dict1.keys())))
+        continue

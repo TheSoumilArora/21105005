@@ -6,7 +6,7 @@ given_table = [ ["A+","Outstanding",10],
                 ["C","Below Average",5],
                 ["D","Poor",4] ]
 while True:
-    grade_point = eval(input("Enter the grade point of the student : "))
+    grade_point = eval(input("Enter the grade point of the student: "))
     if 4 <= grade_point <= 10:
         break
     else:
