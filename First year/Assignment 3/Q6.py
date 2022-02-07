@@ -4,8 +4,18 @@ while True:                                                                     
     SID = int(input("Enter the SID of %s: " % name))
     dict1[SID] = name
     print("\nYou have entered %d value(s) till now" % len(dict1))
-    more_data = input("Do you want to enter more data? ")
-    if more_data in ("N","n","No","no","NO"):
+    while True:
+        more_data = input("Do you want to enter more data? ")
+        if more_data in ("N","n","No","no","NO"):
+            more_data = 0
+            break
+        elif more_data in ("Y","y","Yes","yes","YES"):
+            more_data = 1
+            break
+        else:
+            print("\nPlease say yes or no")
+            continue
+    if more_data == 0:
         break
 print("\na. Student Details:")                                                                                      #Q6(a)
 for i in dict1:
