@@ -1,4 +1,4 @@
-The solution of Question 1 is :
+The solution of Question 1 is:
 
 Enter the string: Soumil tells soumil that his name is soumil so Soumil agrees that his name is Soumil
 The occurence(s) of:
@@ -11,7 +11,7 @@ The occurence(s) of:
         "so" is/are 1
         "agrees" is/are 1
 
-The solution of Question 2 is :
+The solution of Question 2 is:
 
 Day - 29
 Month - 2
@@ -23,17 +23,17 @@ Month - 2
 Year - 1999
 Next Date is: 1/3/1999
 
-The solution of Question 3 is :
+The solution of Question 3 is:
 
 Enter the list: [4,5,6,7,8,9]
 Output: [(4, 16), (5, 25), (6, 36), (7, 49), (8, 64), (9, 81)]
 
-The solution of Question 4 is :
+The solution of Question 4 is:
 
 Enter the grade point of the student: 9.3
 Your Grade is 'A' and Excellent Performance
 
-The solution of Question 5 is :
+The solution of Question 5 is:
 
 ABCDEFGHIJK
  ABCDEFGHI
@@ -42,7 +42,7 @@ ABCDEFGHIJK
     ABC
      A
 
-The solution of Question 6 is :
+The solution of Question 6 is:
 
 Enter the name of the student: Soumil   
 Enter the SID of Soumil: 21105005
@@ -83,14 +83,14 @@ List of valid SIDs: [21105005, 21105020, 21105047]
 Enter the SID of the student: 21105005
 The name of student whose SID is 21105005 is Soumil
 
-The solution of Question 7 is :
+The solution of Question 7 is:
 
 Enter the no. of terms of the Fibonacci sequence: 9
 The Fibonacci sequence is as follows:
 0 1 1 2 3 5 8 13 21 
 The average of the terms of Fibonacci sequence upto 9 terms is 6.00
 
-The solution of Question 8 is :
+The solution of Question 8 is:
 
 a. Set of all elements that are in Set1 and Set2 but not both: {1, 3, 5, 6, 8}
 b. Set of all elements that are in only one of the three sets Set1, Set2 and Set3: {17, 3, 6, 8, 9, 13}

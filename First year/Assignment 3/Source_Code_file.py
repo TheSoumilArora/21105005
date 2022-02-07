@@ -1,5 +1,5 @@
 #Question 1
-print("The solution of Question 1 is :\n")
+print("The solution of Question 1 is:\n")
 input_value = input("Enter the string: ").lower().split()
 if len(input_value) == 1:
     input_value = input_value[0]
@@ -14,7 +14,7 @@ for i in occurences:
     print('\t"\033[1m%s\033[0m" is/are \033[1m%d\033[0m' % (i,occurences[i]))
 
 #Question 2
-print("\nThe solution of Question 2 is :\n")
+print("\nThe solution of Question 2 is:\n")
 def is_leap_year(year: int) -> bool:                                                                                #Function for checking if the given year is a leap year or not
     if (year % 4 == 0) and (year % 100 != 0) or (year % 400 == 0):
         return True
@@ -59,7 +59,7 @@ else:
 print("Next Date is: %d/%d/%d" % (date,month,year))
 
 #Question 3
-print("\nThe solution of Question 3 is :\n")
+print("\nThe solution of Question 3 is:\n")
 list_in = eval(input("Enter the list: "))
 list_out = []
 for i in list_in:
@@ -67,7 +67,7 @@ for i in list_in:
 print("Output:", list_out)
 
 #Question 4
-print("\nThe solution of Question 4 is :\n")
+print("\nThe solution of Question 4 is:\n")
 '''given_table is a list of lists'''
 given_table = [ ["A+","Outstanding",10],
                 ["A","Excellent",9],
@@ -88,15 +88,15 @@ for i in given_table:                                                           
             print("Your Grade is '%s' and %s Performance" % (i[0],i[1]))
 
 #Question 5
-print("\nThe solution of Question 5 is :\n")
+print("\nThe solution of Question 5 is:\n")
 string = "ABCDEFGHIJK"
 j = 0
-while len(string)-j*2 >= 1:
+while len(string) - j*2 >= 1:
     print(" "*j + string[0 : len(string) - j*2])
     j += 1
 
 #Question 6
-print("\nThe solution of Question 6 is :\n")
+print("\nThe solution of Question 6 is:\n")
 dict1 = {}
 while True:                                                                                                         #Loop for inputting values
     name = input("Enter the name of the student: ")
@@ -136,7 +136,7 @@ while True:
         continue
 
 #Question 7
-print("\nThe solution of Question 7 is :\n")
+print("\nThe solution of Question 7 is:\n")
 '''a is first number, b is second number and c is the extra variable used for adding and reassigning the values'''
 a = 0
 b = 1
@@ -162,7 +162,7 @@ while True:                                                                     
         break
 
 #Question 8
-print("\nThe solution of Question 8 is :\n")
+print("\nThe solution of Question 8 is:\n")
 set1 = {1,2,3,4,5}
 set2 = {2,4,6,8}
 set3 = {1,5,9,13,17}
