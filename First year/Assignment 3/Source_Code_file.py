@@ -1,6 +1,6 @@
 #Question 1
 print("The solution of Question 1 is:\n")
-input_value = input("Enter the string: ").lower().split()
+input_value = input("Enter the string: ").lower().replace("."," ").replace(","," ").split()                         #Replace function is used to eliminate full stop and comma from the sentence which are often used in sentences, preventing wrong output
 if len(input_value) == 1:
     input_value = input_value[0]
 occurences = {}
