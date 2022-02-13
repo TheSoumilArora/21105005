@@ -86,6 +86,7 @@ for i in given_table:                                                           
     for j in i:
         if j == int(grade_point):
             print("Your Grade is '%s' and %s Performance" % (i[0],i[1]))
+            break
 
 #Question 5
 print("\nThe solution of Question 5 is:\n")
