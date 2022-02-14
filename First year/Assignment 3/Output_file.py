@@ -25,7 +25,7 @@ Next Date is: 1/3/1999
 
 The solution of Question 3 is:
 
-Enter the list: [4,5,6,7,8,9]
+Enter the list of integers: [4,5,6,7,8,9]
 Output: [(4, 16), (5, 25), (6, 36), (7, 49), (8, 64), (9, 81)]
 
 The solution of Question 4 is:
