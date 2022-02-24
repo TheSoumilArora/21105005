@@ -16,7 +16,7 @@ def pascaltriangle(num):
         result.append(current_row)                                                                  #Adding the computed row to the data of all rows
     return result
 for i in pascaltriangle(n):
-    print((n-len(i))*" ",end="")                                                                         #This print() adds space before printing each row
+    print((n-len(i))*" ",end="")                                                                    #This print() adds space before printing each row
     for j in i:
         print(j, end =" ")
     print()
@@ -24,7 +24,7 @@ for i in pascaltriangle(n):
 #ITERATION
 print("The Pascal's Triangle using iteration is:")
 for i in range(n):                                                                                  #Outer loop is for the rows
-    print((n-i-1)*" ",end="")                                                                         #This print() adds space before printing each row
+    print((n-i-1)*" ",end="")                                                                       #This print() adds space before printing each row
     for j in range(n):                                                                              #Inner loop is for the individual elements to be printed
         if comb(i,j) != 0:                                                                          #Condition to ignore the cases when combination = 0 (when j>i)
             print(comb(i,j),end=" ")                                                                #This print() prints each element and adds space after printing each value
