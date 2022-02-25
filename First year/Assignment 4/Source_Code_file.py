@@ -44,6 +44,13 @@ for i in range(n):                                                              
 #Question 3
 print("\nThe solution of Question 3 is:\n")
 
+
+
+
+
+#Question 4
+print("\nThe solution of Question 4 is:\n")
+
 class Student:                                                                                          #Creating class
     def __init__(self,name,rno):
         self.name = name
@@ -59,13 +66,10 @@ del student1                                                                    
 
 
 
-#Question 4
-print("\nThe solution of Question 4 is:\n")
-
-
-
 #Question 5
 print("\nThe solution of Question 5 is:\n")
+
+
 
 
 

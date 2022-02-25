@@ -1,4 +1,4 @@
-class Student:                                                                                          #Creating class
+class Student:                                                                                          #Creating class Student
     def __init__(self,name,rno):
         self.name = name
         self.rno = rno
