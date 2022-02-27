@@ -1,10 +1,17 @@
 from math import comb
-n = int(input("Enter the number of rows you want to print: "))                                          #Asking the user the number of rows he/she wants
+while True:                                                                                             #Loop for preventing -ve input of no. of rows (because they can't be -ve)
+    n = int(input("Enter the number of rows you want to print: "))                                      #Asking the user the number of rows he/she wants
+    if n >= 0:
+        break
+    else:
+        print("Number of rows must be positive, please enter the value again!")
 
 #RECURSION
 print("The Pascal's Triangle using recursion is:")
 def pascaltriangle(num):
-    if num == 1:                                                                                        #Base case
+    if num == 0:
+        return [[0]]
+    elif num == 1:                                                                                      #Base case
         return [[1]]
     else:
         result = pascaltriangle(num-1)                                                                  #Recursive call
@@ -18,7 +25,8 @@ def pascaltriangle(num):
 for i in pascaltriangle(n):
     print((n-len(i))*" ",end="")                                                                        #This print() adds space before printing each row
     for j in i:
-        print(j, end =" ")
+        if j != 0:
+            print(j, end =" ")
     print()
 
 #ITERATION

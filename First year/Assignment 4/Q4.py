@@ -4,7 +4,7 @@ class Student:                                                                  
         self.rno = rno
         print("Object Created\n")
     def __del__(self):
-        print("Object destroyed")
+        print("\nObject destroyed")
 name = input("Enter name of student: ").strip()                                                         #Inputting name and roll number from the user
 roll_no = int(input("Enter SID of %s: " % (name)))
 student1 = Student(name,roll_no)                                                                        #Creating object
