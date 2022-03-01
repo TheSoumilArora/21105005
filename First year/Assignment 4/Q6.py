@@ -5,7 +5,7 @@ def list_of_letters(string):                                                    
     return list_out
 
 def check_meaning(word):                                                                                #Function to check meaning of a word
-    import enchant                                                                                      #Using the enchant module to check whether word is valid or not
+    import enchant
     d = enchant.Dict("en_US")
     return d.check(word)
 
@@ -29,7 +29,7 @@ letters_in_word_george = list_of_letters(word_george)
 letters_in_word_barbie = list_of_letters(word_barbie)
 
 while True:                                                                                             #Loop to ask the shopkeeper if he wants to consider same number of letters or not
-    same_letters = input("\nDo you want to consider same no. of letters also?\n")
+    same_letters = input("\nDo you want to consider same no. of letters also? ")
     if same_letters in ("N","n","No","NO","no"):
         same_letters = False
         break

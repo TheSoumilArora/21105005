@@ -1,7 +1,20 @@
 #Question 1
 print("The solution of Question 1 is:\n")
 
+count = 0
+def towerofhanoi(n, initial_rod, final_rod, extra_rod):
+    global count
+    if n == 0:                                                                                          #Base case
+        return
+    count += 1
+    towerofhanoi(n-1, initial_rod, extra_rod, final_rod)                                                #Recursive call
+    print("Move disk",n,"from rod",initial_rod,"to rod",final_rod)
+    towerofhanoi(n-1, extra_rod, final_rod, initial_rod)
 
+no_of_discs = int(input("Number of discs: "))
+print("\nA is the initial rod\nB is the extra rod\nC is the final rod\n\nSteps:")
+towerofhanoi(no_of_discs, 'A', 'C', 'B')
+print("\nNumber of steps will be: %d" % (count))
 
 
 
@@ -19,7 +32,7 @@ while True:                                                                     
 #RECURSION
 print("The Pascal's Triangle using recursion is:")
 def pascaltriangle(num):
-    if num == 0:
+    if num == 0:                                                                                        #Condition for num = 0
         return [[0]]
     elif num == 1:                                                                                      #Base case
         return [[1]]
@@ -179,7 +192,7 @@ letters_in_word_george = list_of_letters(word_george)
 letters_in_word_barbie = list_of_letters(word_barbie)
 
 while True:                                                                                             #Loop to ask the shopkeeper if he wants to consider same number of letters or not
-    same_letters = input("\nDo you want to consider same no. of letters also?\n")
+    same_letters = input("\nDo you want to consider same no. of letters also? ")
     if same_letters in ("N","n","No","NO","no"):
         same_letters = False
         break
