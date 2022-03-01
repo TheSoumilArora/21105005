@@ -7,10 +7,10 @@ def hanoitower(n,present,future,midway,count=0):
         return count
         
     else:
-        count+=tower(n-1,present,midway,future)
+        count+=hanoitower(n-1,present,midway,future)
         print(f"Shift disc {n} from {present} to {future}")
         count+=1
-        count+=tower(n-1,midway,future,present)
+        count+=hanoitower(n-1,midway,future,present)
         return count
 
 number_of_discs = int(input("Number of discs : "))
