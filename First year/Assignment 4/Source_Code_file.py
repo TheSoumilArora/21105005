@@ -4,6 +4,7 @@ print("The solution of Question 1 is:\n")
 
 
 
+
 #Question 2
 print("\nThe solution of Question 2 is:\n")
 
@@ -99,15 +100,127 @@ print("The hash value of %d(considering it to be integer) is %d and its hash val
 #Question 4
 print("\nThe solution of Question 4 is:\n")
 
+class Student:                                                                                          #Creating class Student
+    def __init__(self,name,rno):
+        self.name = name
+        self.rno = rno
+        print("Object Created\n")
+    def __del__(self):
+        print("\nObject destroyed")
+name = input("Enter name of student: ").strip()                                                         #Inputting name and roll number from the user
+roll_no = int(input("Enter SID of %s: " % (name)))
+student1 = Student(name,roll_no)                                                                        #Creating object
+print("The name of the student is %s and his/her roll number is %d" % (student1.name,student1.rno))     #Printing the assigned values
+del student1                                                                                            #Deleting the object
 
 
 
 #Question 5
 print("\nThe solution of Question 5 is:\n")
 
+class Employee:                                                                                         #Creating class Employee
+    def __init__(self,name,salary):        
+        self.name = name
+        self.salary = salary
+    def print_data(self):
+        print("%s has a salary of %d rupees" % (self.name,self.salary))
+employee1 = Employee("Mehak",40000)                                                                     #Creating instances for different employees
+employee2 = Employee("Ashok",50000)
+employee3 = Employee("Viren",60000)
+print("The current database is:")                                                                       #Printing the initial values
+for i in [employee1,employee2,employee3]:
+    i.print_data()
+
+print("\na. Updated the salary of %s from %d to " % (employee1.name,employee1.salary), end = "")        #Updating salary of Mehak to 70000
+employee1.salary = 70000
+print(employee1.salary)
+
+print("\nb. Deleted the record of %s(whose salary is %d)" % (employee3.name,employee3.salary))
+del employee3
+
+print("\nThe final database is:")                                                                       #Printing the final values
+for i in [employee1,employee2]:
+    i.print_data()
 
 
 
 
 #Question 6
 print("\nThe solution of Question 6 is:\n")
+
+def list_of_letters(string):                                                                            #Function to convert a word into a list of letters
+    list_out = []
+    for i in string:
+        list_out.append(i)
+    return list_out
+
+def check_meaning(word):                                                                                #Function to check meaning of a word
+    import enchant
+    d = enchant.Dict("en_US")
+    return d.check(word)
+
+while True:                                                                                             #Loop to make sure only one word is entered by the shopkeeper
+    word_george = input("Enter word uttered by George: ").lower().split()
+    if len(word_george) == 1:
+        word_george = word_george[0]
+        break
+    else:
+        print("Only one word is to be entered\nPlease try again!")
+
+while True:                                                                                             #Loop to make sure only one word is entered by the shopkeeper
+    word_barbie = input("Enter word made by Barbie: ").lower().split()
+    if len(word_barbie) == 1:
+        word_barbie = word_barbie[0]
+        break
+    else:
+        print("Only one word is to be entered\nPlease try again!")
+
+letters_in_word_george = list_of_letters(word_george)
+letters_in_word_barbie = list_of_letters(word_barbie)
+
+while True:                                                                                             #Loop to ask the shopkeeper if he wants to consider same number of letters or not
+    same_letters = input("\nDo you want to consider same no. of letters also?\n")
+    if same_letters in ("N","n","No","NO","no"):
+        same_letters = False
+        break
+    elif same_letters in ("YES","Yes","Y","y","yes"):
+        same_letters = True
+        break
+    else:
+        print("Please enter 'Yes' or 'No'")
+
+if same_letters:
+    if sorted(letters_in_word_barbie) == sorted(letters_in_word_george):
+        word_created = True
+    else:
+        word_created = False
+else:
+    if set(letters_in_word_barbie) == set(letters_in_word_george):                                      #Used set() because a set doesn't contain same elements
+        word_created = True
+    else:
+        word_created = False
+
+if word_created:
+    print("\nBarbie has made a valid word!")
+
+    while True:                                                                                         #Loop to ask the shopkeeper if he wants to check meaning of the word made by Barbie
+        meaning_check = input("\nDo you want to check whether the word made by Barbie it is meaningful or not? ")
+        if meaning_check in ("N","n","No","NO","no"):
+            meaning_check = False
+            break
+        elif meaning_check in ("YES","Yes","Y","y","yes"):
+            meaning_check = True
+            break
+        else:
+            print("Please enter 'Yes' or 'No'")
+
+    if meaning_check:
+        print("\nChecking if the word '%s' is meaningful..." % (word_barbie))
+        if check_meaning(word_barbie):
+            print("The word is meaningful.\n\n\033[1mTheir friendship is true.\033[0m")
+        else:
+            print("The word is meaningless.\n\n\033[1mTheir friendship is fake.\033[0m")
+    else:
+        print("\n\033[1mTheir friendship is true\033[0m")
+else:
+    print("Barbie isn't able to create a word.\n\n\033[1mTheir friendship is fake.\033[0m")
