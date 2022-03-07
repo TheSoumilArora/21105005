@@ -3,8 +3,6 @@
 from tkinter import *
 from tkinter import messagebox
 win=Tk()
-win.minsize(height='300',width='400')
-win.title('GST Tax Finder Calculator')
 Label_1=Label(win,text='GST Tax Finder Calculator',bg='red',font=('Algerian',20))
 Label_1.pack()
 Label_2=Label(win,text='Enter Orignal Cost(+ Rational no.) : ',font=('Arial black',10))

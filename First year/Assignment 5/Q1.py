@@ -23,7 +23,7 @@ win.title("GST Tax Finder Calculator")                                          
 win.geometry("300x300")
 win.minsize(height = "300", width = "300")
 win.maxsize(height = "1080", width = "1080")
-
+win.configure(bg="Beige")
 
 
 win.mainloop()
