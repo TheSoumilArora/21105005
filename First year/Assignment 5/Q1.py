@@ -35,8 +35,8 @@ net_price_entry.place(relheight = 20/400, relwidth = 160/400, relx = 0.53, rely=
 #Calculate GST
 def calculate_gst():
     global output
-    value_gst = gst_formula(original_cost.get(), net_price.get())
-    output = Label(win, font = ('lato',13))
+    value_gst = "%0.2f" % (gst_formula(original_cost.get(), net_price.get()))
+    output = Label(win, text = value_gst+'%', font = ('lato',13))
     output.pack()
     clear_everything.configure(state = NORMAL)
 
