@@ -1,16 +1,10 @@
-# *********** Ans -1 ************
 
 from tkinter import *
-from tkinter import messagebox
 win=Tk()
 Entry_1=Entry(win,width='20')
 Entry_1.place(x=270,y=60)
-Label_3=Label(win,text='Enter Net Price(+ Rational no.) : ',font=('Arial black',10))
-Label_3.place(x=35,y=100)
 Entry_2=Entry(win,width='20')
 Entry_2.place(x=270,y=100)
-Label_4=Label(win,text='GST (in %) : ',font=('Arial black',10))
-Label_4.place(x=175,y=140)
 def myclick():
     global Answer
     if(Entry_1.get()=='' or Entry_2.get()=='' or float(Entry_1.get())<0 or float(Entry_2.get())<0):
@@ -173,79 +167,3 @@ if __name__ == "__main__":
 	Decimal.grid(row=6, column=0)
 	gui.mainloop()
 
-
-# *********** Ans -4 ************
-
-#  BY USING MERGE SORT 
-
-def mergesort(l):
-    if(len(l)==1):
-        return l
-    mid=len(l)//2
-    left=mergesort(l[:mid])
-    right=mergesort(l[mid:])
-    i=0
-    j=0
-    sorted_list=[]
-    while i < len(left) and j < len(right):
-        if(left[i]<right[j]):
-            sorted_list.append(left[i])
-            i += 1
-        else:
-            sorted_list.append(right[j])
-            j += 1
-    sorted_list.extend(left[i:])
-    sorted_list.extend(right[j:]) 
-    return sorted_list
-
-l=[1,5,7,3,2,72,33,4,53,5234,234,1,124]
-print(f'Unsorted List : {l}')
-sorted_list=mergesort(l)
-print(f'Sorted List : {sorted_list}')
-
-
-# *********** Ans -5 ************
-
-inputed_list=[]
-n=int(input('Enter the list size (integer) : '))
-i=1
-while(i<=n):
-    temp=int(input(f'Enter(integer) element-{i} : '))
-    inputed_list.append(temp)
-    i+=1
-
-# part a
-sorted_list=sorted(inputed_list)
-print(f'Sorted array : {sorted_list}')
-
-# part b
-m=int(input('Enter the number to find occurences of that number (integer) : '))
-start=0
-end=n-1
-founded=False
-while(start<=end):
-    mid=((end+start)//2)
-    if(sorted_list[mid]==m):
-        founded=True
-        break
-    elif(sorted_list[mid]<m):
-        start=mid+1
-    else:
-        end=mid-1
-
-# part c
-if(founded):
-    # mid is the index of element as array is sorted
-    # same element is present in its (right or left(togther)) otherwise nowhere
-    p=mid-1 # p is index checking leftward
-    q=mid+1 # q is index checking rightward
-    count=1 # count intially one because mid is also present
-    while(q<n and sorted_list[q]==m):
-        count+=1
-        q+=1
-    while(p>=0 and sorted_list[p]==m):
-        count+=1
-        p-=1
-    print(f'Number of occurrences of element {m} is {count}')
-else:
-    print(f'Error - {m} NOT FOUNDED')
