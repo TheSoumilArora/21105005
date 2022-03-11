@@ -8,7 +8,7 @@ while True:                                                                     
 
 #RECURSION
 print("The Pascal's Triangle using recursion is:")
-def pascaltriangle(num):
+def pascaltriangle(num: int) -> list:
     if num == 0:
         return [[0]]
     elif num == 1:                                                                                      #Base case
@@ -33,7 +33,6 @@ for i in pascaltriangle(n):
 print("The Pascal's Triangle using iteration is:")
 for i in range(n):                                                                                      #Outer loop is for the rows
     print((n-i-1)*" ",end="")                                                                           #This print() adds space before printing each row
-    for j in range(n):                                                                                  #Inner loop is for the individual elements to be printed
-        if comb(i,j) != 0:                                                                              #Condition to ignore the cases when combination = 0 (when j>i)
-            print(comb(i,j),end=" ")                                                                    #This print() prints each element and adds space after printing each value
+    for j in range(i+1):                                                                                #Inner loop is for the individual elements to be printed
+        print(comb(i,j),end=" ")                                                                        #This print() prints each element and adds space after printing each value
     print()                                                                                             #This print() is for changing line for next row
