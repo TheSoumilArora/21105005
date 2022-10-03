@@ -1,5 +1,6 @@
 #include <string>
-
+#include <iostream>
+#include <climits>
 using namespace std;
 
 class Pair
@@ -23,11 +24,6 @@ public:
         this->prev = NULL;
     }
 };
-
-#include <iostream>
-#include <climits>
-
-using namespace std;
 
 Node *takeinput(int n)
 {
