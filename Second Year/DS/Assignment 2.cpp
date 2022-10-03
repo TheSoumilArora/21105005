@@ -58,7 +58,7 @@ void print(Node *head)
         temp = temp->next;
     }
     cout << endl;
-    cout << "We have reached the start of the Circular Linked List" << endl;
+    cout << "We have reached the start of our Circular Linked List" << endl;
 }
 
 int main()
