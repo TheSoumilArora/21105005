@@ -56,7 +56,7 @@ void print(Node *head)
     cout << "The details of the members in the Linked List are arranged on the basis of their age " << endl;
     cout << endl;
     Node *temp = head;
-    cout << "Printing the details from forward to end in a Linked List :" << endl;
+    cout << "Printing the details from forward to end in a Linked List: " << endl;
     while (temp != NULL)
     {
         if (temp->next != NULL)
@@ -70,7 +70,7 @@ void print(Node *head)
         temp = temp->next;
     }
     cout << endl;
-    cout << "Printing the details from end to forward in a Linked List :" << endl;
+    cout << "Printing the details from end to forward in a Linked List: " << endl;
     Node *temp1 = head;
     while (temp1->next != NULL)
     {
@@ -115,7 +115,7 @@ Node *relation(Node *head, int n)
 int main()
 {
     int n;
-    cout << "Enter the number of members in family : ";
+    cout << "Enter the number of members in family: ";
     cin >> n;
 
     Node *head = takeinput(n);
